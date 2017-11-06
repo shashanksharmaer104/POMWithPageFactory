@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test name="Test">
+  <parameter name="username" value="automation.admin@shl.com"></parameter>
+  <parameter name="password" value="Shlonline@123"></parameter>
+    <classes>
+      <class name="com.test.frameworks.POMWithPageFactory.tests.TestAdminLogin"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
