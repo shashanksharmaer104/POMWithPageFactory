@@ -11,7 +11,7 @@ import org.testng.annotations.BeforeTest;
 
 public class BaseTest {
 
-	public static WebDriver driver;
+	public static WebDriver driver = null;
 
 	@BeforeTest
 	public void setup() {
