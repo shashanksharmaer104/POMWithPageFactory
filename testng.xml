@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite">
-	<test name="SimpleLogin" enabled="false">
+
+	<parameter name="EnvURL" value="https://talentcentral.cebglobal.com/admin/login" />
+	
+	<test name="Test: Simple Login" enabled="true">
 		<parameter name="username" value="automation.admin@shl.com"/>
 		<parameter name="password" value="Shlonline@123"/>
 		<classes>
@@ -13,7 +16,7 @@
 		</classes>
 	</test> <!-- Test -->
 
-	<test name="LoginWithConstDataProvider" enabled="false">
+	<test name="Test: Login with constant Data Provider" enabled="true">
 		<classes>
 			<class name="com.test.frameworks.POMWithPageFactory.tests.TestAdminLogin">
 				<methods>
@@ -23,7 +26,7 @@
 		</classes>
 	</test> <!-- Test -->
 	
-	<test name="LoginWithDataProvider" enabled="true">
+	<test name="Test: Login with excel Data Provider" enabled="true">
 		<classes>
 			<class name="com.test.frameworks.POMWithPageFactory.tests.TestAdminLogin">
 				<methods>

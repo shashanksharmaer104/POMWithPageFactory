@@ -5,11 +5,12 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-import com.test.frameworks.POMWithPageFactory.base.BaseTest;
+import com.test.frameworks.POMWithPageFactory.base.TestBase;
 import com.test.frameworks.POMWithPageFactory.pageObjects.AdminLogin;
 import com.test.frameworks.POMWithPageFactory.utility.ExcelUtils;
 
-public class TestAdminLogin extends BaseTest {
+
+public class TestAdminLogin extends TestBase {
 	
 	/*WebDriver driver;
 	
@@ -18,18 +19,23 @@ public class TestAdminLogin extends BaseTest {
 	}*/
 	
 	@Test
-	@Parameters({"username","password"})
-	public void testAdminLogin(String username, String password) {
-		
-		driver.get("https://talentcentral.cebglobal.com/admin/login");
-		
-		//Create page object
-		AdminLogin adminLoginObj = new AdminLogin(driver);
-		
-		adminLoginObj.loginAdmin(username, password);
-		System.out.println("Test case 1 executed");
-		
-		// Added comment
+	@Parameters({"EnvURL","username","password"})
+	public void testAdminLogin(String envURL, String username, String password) {
+		try {
+			driver.get(envURL);
+			
+			//Create page object
+			AdminLogin adminLoginObj = new AdminLogin(driver);
+			
+			adminLoginObj.loginAdmin(username, password);
+			System.out.println("Test case 1 executed");
+			
+			// Added comment
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		}
 	}
 	
 	@DataProvider(name="Authentication")

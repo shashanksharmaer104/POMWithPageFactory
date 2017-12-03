@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <test name="LoginWithDataProvider(failed)">
+  <parameter name="EnvURL" value="https://talentcentral.cebglobal.com/admin/login"/>
+  <test name="LoginWithConstDataProvider(failed)">
     <classes>
       <class name="com.test.frameworks.POMWithPageFactory.tests.TestAdminLogin">
         <methods>
           <include name="shutDown"/>
+          <include name="testAdminLoginWithConstDataProvider"/>
           <include name="setup"/>
-          <include name="testAdminLoginWithDataProvider"/>
         </methods>
       </class> <!-- com.test.frameworks.POMWithPageFactory.tests.TestAdminLogin -->
     </classes>
-  </test> <!-- LoginWithDataProvider(failed) -->
+  </test> <!-- LoginWithConstDataProvider(failed) -->
 </suite> <!-- Failed suite [Suite] -->

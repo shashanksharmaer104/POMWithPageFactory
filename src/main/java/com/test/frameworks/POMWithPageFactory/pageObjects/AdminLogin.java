@@ -9,9 +9,9 @@ import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import com.test.frameworks.POMWithPageFactory.base.BasePage;
+import com.test.frameworks.POMWithPageFactory.base.PageBase;
 
-public class AdminLogin extends BasePage {
+public class AdminLogin extends PageBase {
 	
 	WebDriver driver;
 	
