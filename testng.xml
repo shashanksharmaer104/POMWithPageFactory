@@ -4,7 +4,7 @@
 
 	<parameter name="EnvURL" value="https://talentcentral.cebglobal.com/admin/login" />
 	
-	<test name="Test: Simple Login" enabled="true">
+	<test name="Test: Simple Login" enabled="false">
 		<parameter name="username" value="automation.admin@shl.com"/>
 		<parameter name="password" value="Shlonline@123"/>
 		<classes>
@@ -31,6 +31,17 @@
 			<class name="com.test.frameworks.POMWithPageFactory.tests.TestAdminLogin">
 				<methods>
 					<include name="testAdminLoginWithDataProvider" />
+				</methods>
+			</class>
+		</classes>
+	</test> <!-- Test -->
+	
+	<test name="Test: Weather page API" enabled="true">
+	<parameter name="EnvURL" value="http://openweathermap.org/current" />
+		<classes>
+			<class name="com.test.frameworks.POMWithPageFactory.tests.TestWeatherApi">
+				<methods>
+					<include name="testWeatherApi" />
 				</methods>
 			</class>
 		</classes>

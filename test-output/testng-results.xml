@@ -1,42 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="2" total="3" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="POMWithPageFactorySuite" duration-ms="26615" started-at="2017-12-03T11:19:40Z" finished-at="2017-12-03T11:20:06Z">
+  <suite name="POMWithPageFactorySuite" duration-ms="78216" started-at="2017-12-03T16:01:24Z" finished-at="2017-12-03T16:02:43Z">
     <groups>
     </groups>
-    <test name="Test: Simple Login" duration-ms="26615" started-at="2017-12-03T11:19:40Z" finished-at="2017-12-03T11:20:06Z">
-      <class name="com.test.frameworks.POMWithPageFactory.tests.TestAdminLogin">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.test.frameworks.POMWithPageFactory.tests.TestAdminLogin@13deb50e]" name="setup" is-config="true" duration-ms="2424" started-at="2017-12-03T16:49:40Z" finished-at="2017-12-03T16:49:42Z">
+    <test name="Test: Weather page API" duration-ms="78216" started-at="2017-12-03T16:01:24Z" finished-at="2017-12-03T16:02:43Z">
+      <class name="com.test.frameworks.POMWithPageFactory.tests.TestWeatherApi">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.test.frameworks.POMWithPageFactory.tests.TestWeatherApi@1ab3a8c8]" name="setup" is-config="true" duration-ms="3200" started-at="2017-12-03T21:31:24Z" finished-at="2017-12-03T21:31:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="testAdminLogin(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.test.frameworks.POMWithPageFactory.tests.TestAdminLogin@13deb50e]" name="testAdminLogin" duration-ms="21318" started-at="2017-12-03T16:49:42Z" finished-at="2017-12-03T16:50:03Z">
+        <test-method status="PASS" signature="testWeatherApi(java.lang.String)[pri:0, instance:com.test.frameworks.POMWithPageFactory.tests.TestWeatherApi@1ab3a8c8]" name="testWeatherApi" duration-ms="72324" started-at="2017-12-03T21:31:28Z" finished-at="2017-12-03T21:32:40Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[https://talentcentral.cebglobal.com/admin/login]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[automation.admin@shl.com]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Shlonline@123]]>
+                <![CDATA[http://openweathermap.org/current]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testAdminLogin -->
-        <test-method status="PASS" signature="shutDown()[pri:0, instance:com.test.frameworks.POMWithPageFactory.tests.TestAdminLogin@13deb50e]" name="shutDown" is-config="true" duration-ms="2861" started-at="2017-12-03T16:50:03Z" finished-at="2017-12-03T16:50:06Z">
+        </test-method> <!-- testWeatherApi -->
+        <test-method status="PASS" signature="shutDown()[pri:0, instance:com.test.frameworks.POMWithPageFactory.tests.TestWeatherApi@1ab3a8c8]" name="shutDown" is-config="true" duration-ms="2669" started-at="2017-12-03T21:32:40Z" finished-at="2017-12-03T21:32:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- shutDown -->
-      </class> <!-- com.test.frameworks.POMWithPageFactory.tests.TestAdminLogin -->
-    </test> <!-- Test: Simple Login -->
+      </class> <!-- com.test.frameworks.POMWithPageFactory.tests.TestWeatherApi -->
+    </test> <!-- Test: Weather page API -->
   </suite> <!-- POMWithPageFactorySuite -->
 </testng-results>
