@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Suite">
+<suite name="POMWithPageFactorySuite" thread-count="10" parallel="none">
 
 	<parameter name="EnvURL" value="https://talentcentral.cebglobal.com/admin/login" />
 	
@@ -16,7 +16,7 @@
 		</classes>
 	</test> <!-- Test -->
 
-	<test name="Test: Login with constant Data Provider" enabled="true">
+	<test name="Test: Login with constant Data Provider" enabled="false">
 		<classes>
 			<class name="com.test.frameworks.POMWithPageFactory.tests.TestAdminLogin">
 				<methods>
@@ -26,7 +26,7 @@
 		</classes>
 	</test> <!-- Test -->
 	
-	<test name="Test: Login with excel Data Provider" enabled="true">
+	<test name="Test: Login with excel Data Provider" enabled="false">
 		<classes>
 			<class name="com.test.frameworks.POMWithPageFactory.tests.TestAdminLogin">
 				<methods>

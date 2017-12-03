@@ -1,6 +1,5 @@
 package com.test.frameworks.POMWithPageFactory.tests;
 
-import org.openqa.selenium.WebDriver;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
@@ -8,6 +7,7 @@ import org.testng.annotations.Test;
 import com.test.frameworks.POMWithPageFactory.base.TestBase;
 import com.test.frameworks.POMWithPageFactory.pageObjects.AdminLogin;
 import com.test.frameworks.POMWithPageFactory.utility.ExcelUtils;
+import com.test.frameworks.POMWithPageFactory.utility.Log;
 
 
 public class TestAdminLogin extends TestBase {
@@ -22,11 +22,13 @@ public class TestAdminLogin extends TestBase {
 	@Parameters({"EnvURL","username","password"})
 	public void testAdminLogin(String envURL, String username, String password) {
 		try {
+			Log.info("STEP 1: Launch Admin URL");
 			driver.get(envURL);
 			
 			//Create page object
 			AdminLogin adminLoginObj = new AdminLogin(driver);
 			
+			Log.info("STEP 2: Login Admin");
 			adminLoginObj.loginAdmin(username, password);
 			System.out.println("Test case 1 executed");
 			

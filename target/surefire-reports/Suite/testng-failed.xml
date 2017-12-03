@@ -1,16 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite]">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite]" parallel="tests">
   <parameter name="EnvURL" value="https://talentcentral.cebglobal.com/admin/login"/>
-  <test name="LoginWithConstDataProvider(failed)">
+  <test name="Test: Login with constant Data Provider(failed)" parallel="tests">
     <classes>
       <class name="com.test.frameworks.POMWithPageFactory.tests.TestAdminLogin">
         <methods>
-          <include name="testAdminLoginWithConstDataProvider" invocation-numbers="0"/>
+          <include name="testAdminLoginWithConstDataProvider" invocation-numbers="1"/>
           <include name="shutDown"/>
           <include name="setup"/>
         </methods>
       </class> <!-- com.test.frameworks.POMWithPageFactory.tests.TestAdminLogin -->
     </classes>
-  </test> <!-- LoginWithConstDataProvider(failed) -->
+  </test> <!-- Test: Login with constant Data Provider(failed) -->
+  <test name="Test: Login with excel Data Provider(failed)" parallel="tests">
+    <classes>
+      <class name="com.test.frameworks.POMWithPageFactory.tests.TestAdminLogin">
+        <methods>
+          <include name="shutDown"/>
+          <include name="setup"/>
+          <include name="testAdminLoginWithDataProvider" invocation-numbers="1"/>
+        </methods>
+      </class> <!-- com.test.frameworks.POMWithPageFactory.tests.TestAdminLogin -->
+    </classes>
+  </test> <!-- Test: Login with excel Data Provider(failed) -->
 </suite> <!-- Failed suite [Suite] -->

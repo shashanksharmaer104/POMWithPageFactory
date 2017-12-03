@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="6" total="11" passed="5">
+<testng-results skipped="0" failed="0" ignored="2" total="3" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="44680" started-at="2017-12-03T10:32:43Z" finished-at="2017-12-03T10:33:27Z">
+  <suite name="POMWithPageFactorySuite" duration-ms="26615" started-at="2017-12-03T11:19:40Z" finished-at="2017-12-03T11:20:06Z">
     <groups>
     </groups>
-    <test name="SimpleLogin" duration-ms="12768" started-at="2017-12-03T10:32:43Z" finished-at="2017-12-03T10:32:55Z">
+    <test name="Test: Simple Login" duration-ms="26615" started-at="2017-12-03T11:19:40Z" finished-at="2017-12-03T11:20:06Z">
       <class name="com.test.frameworks.POMWithPageFactory.tests.TestAdminLogin">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.test.frameworks.POMWithPageFactory.tests.TestAdminLogin@3abbfa04]" name="setup" is-config="true" duration-ms="2351" started-at="2017-12-03T16:02:43Z" finished-at="2017-12-03T16:02:45Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.test.frameworks.POMWithPageFactory.tests.TestAdminLogin@13deb50e]" name="setup" is-config="true" duration-ms="2424" started-at="2017-12-03T16:49:40Z" finished-at="2017-12-03T16:49:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="testAdminLogin(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.test.frameworks.POMWithPageFactory.tests.TestAdminLogin@3abbfa04]" name="testAdminLogin" duration-ms="7528" started-at="2017-12-03T16:02:45Z" finished-at="2017-12-03T16:02:53Z">
+        <test-method status="PASS" signature="testAdminLogin(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.test.frameworks.POMWithPageFactory.tests.TestAdminLogin@13deb50e]" name="testAdminLogin" duration-ms="21318" started-at="2017-12-03T16:49:42Z" finished-at="2017-12-03T16:50:03Z">
           <params>
             <param index="0">
               <value>
@@ -32,109 +32,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAdminLogin -->
-        <test-method status="PASS" signature="shutDown()[pri:0, instance:com.test.frameworks.POMWithPageFactory.tests.TestAdminLogin@3abbfa04]" name="shutDown" is-config="true" duration-ms="2877" started-at="2017-12-03T16:02:53Z" finished-at="2017-12-03T16:02:55Z">
+        <test-method status="PASS" signature="shutDown()[pri:0, instance:com.test.frameworks.POMWithPageFactory.tests.TestAdminLogin@13deb50e]" name="shutDown" is-config="true" duration-ms="2861" started-at="2017-12-03T16:50:03Z" finished-at="2017-12-03T16:50:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- shutDown -->
       </class> <!-- com.test.frameworks.POMWithPageFactory.tests.TestAdminLogin -->
-    </test> <!-- SimpleLogin -->
-    <test name="LoginWithConstDataProvider" duration-ms="17594" started-at="2017-12-03T10:32:55Z" finished-at="2017-12-03T10:33:13Z">
-      <class name="com.test.frameworks.POMWithPageFactory.tests.TestAdminLogin">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.test.frameworks.POMWithPageFactory.tests.TestAdminLogin@59494225]" name="setup" is-config="true" duration-ms="1895" started-at="2017-12-03T16:02:55Z" finished-at="2017-12-03T16:02:57Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="testAdminLoginWithConstDataProvider(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.test.frameworks.POMWithPageFactory.tests.TestAdminLogin@59494225]" name="testAdminLoginWithConstDataProvider" duration-ms="12071" started-at="2017-12-03T16:02:57Z" data-provider="Authentication" finished-at="2017-12-03T16:03:09Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[testuser_1]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[passsword]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[text1]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testAdminLoginWithConstDataProvider -->
-        <test-method status="PASS" signature="testAdminLoginWithConstDataProvider(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.test.frameworks.POMWithPageFactory.tests.TestAdminLogin@59494225]" name="testAdminLoginWithConstDataProvider" duration-ms="743" started-at="2017-12-03T16:03:09Z" data-provider="Authentication" finished-at="2017-12-03T16:03:10Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[testuser_2]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[password]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[text2]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testAdminLoginWithConstDataProvider -->
-        <test-method status="PASS" signature="shutDown()[pri:0, instance:com.test.frameworks.POMWithPageFactory.tests.TestAdminLogin@59494225]" name="shutDown" is-config="true" duration-ms="2880" started-at="2017-12-03T16:03:10Z" finished-at="2017-12-03T16:03:13Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- shutDown -->
-      </class> <!-- com.test.frameworks.POMWithPageFactory.tests.TestAdminLogin -->
-    </test> <!-- LoginWithConstDataProvider -->
-    <test name="LoginWithDataProvider" duration-ms="14207" started-at="2017-12-03T10:33:13Z" finished-at="2017-12-03T10:33:27Z">
-      <class name="com.test.frameworks.POMWithPageFactory.tests.TestAdminLogin">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.test.frameworks.POMWithPageFactory.tests.TestAdminLogin@1ed4004b]" name="setup" is-config="true" duration-ms="1918" started-at="2017-12-03T16:03:13Z" finished-at="2017-12-03T16:03:15Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="testAdminLoginWithDataProvider(java.lang.String, java.lang.String)[pri:0, instance:com.test.frameworks.POMWithPageFactory.tests.TestAdminLogin@1ed4004b]" name="testAdminLoginWithDataProvider" duration-ms="8209" started-at="2017-12-03T16:03:15Z" data-provider="AuthenticationUsingExcel" finished-at="2017-12-03T16:03:24Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[testuser_01]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[password1]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testAdminLoginWithDataProvider -->
-        <test-method status="PASS" signature="testAdminLoginWithDataProvider(java.lang.String, java.lang.String)[pri:0, instance:com.test.frameworks.POMWithPageFactory.tests.TestAdminLogin@1ed4004b]" name="testAdminLoginWithDataProvider" duration-ms="758" started-at="2017-12-03T16:03:24Z" data-provider="AuthenticationUsingExcel" finished-at="2017-12-03T16:03:24Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[testuser_02]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[password2]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testAdminLoginWithDataProvider -->
-        <test-method status="PASS" signature="shutDown()[pri:0, instance:com.test.frameworks.POMWithPageFactory.tests.TestAdminLogin@1ed4004b]" name="shutDown" is-config="true" duration-ms="2874" started-at="2017-12-03T16:03:24Z" finished-at="2017-12-03T16:03:27Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- shutDown -->
-      </class> <!-- com.test.frameworks.POMWithPageFactory.tests.TestAdminLogin -->
-    </test> <!-- LoginWithDataProvider -->
-  </suite> <!-- Suite -->
+    </test> <!-- Test: Simple Login -->
+  </suite> <!-- POMWithPageFactorySuite -->
 </testng-results>
