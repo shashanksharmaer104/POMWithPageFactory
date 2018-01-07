@@ -1,9 +1,13 @@
 package com.test.frameworks.POMWithPageFactory.tests;
 
+import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
+import com.aventstack.extentreports.Status;
+import com.aventstack.extentreports.markuputils.ExtentColor;
+import com.aventstack.extentreports.markuputils.MarkupHelper;
 import com.test.frameworks.POMWithPageFactory.base.TestBase;
 import com.test.frameworks.POMWithPageFactory.pageObjects.AdminLogin;
 import com.test.frameworks.POMWithPageFactory.utility.ExcelUtils;
@@ -11,12 +15,6 @@ import com.test.frameworks.POMWithPageFactory.utility.Log;
 
 
 public class TestAdminLogin extends TestBase {
-	
-	/*WebDriver driver;
-	
-	public TestAdminLogin(WebDriver driver) {
-		this.driver = driver;
-	}*/
 	
 	@Test
 	@Parameters({"EnvURL","username","password"})
@@ -32,7 +30,7 @@ public class TestAdminLogin extends TestBase {
 			adminLoginObj.loginAdmin(username, password);
 			System.out.println("Test case 1 executed");
 			
-			// Added comment
+			//logger.log(Status.PASS, MarkupHelper.createLabel("Test Case Passed is passTest", ExtentColor.GREEN));
 			
 		} catch (Exception e) {
 			// TODO: handle exception

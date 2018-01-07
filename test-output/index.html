@@ -102,7 +102,7 @@
                     <div class="method-list-content passed suite-POMWithPageFactorySuite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-POMWithPageFactorySuite" title="com.test.frameworks.POMWithPageFactory.tests.TestWeatherApi" hash-for-method="testWeatherApi(http://openweathermap.org/current)">testWeatherApi(http://openweathermap.org/current)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-POMWithPageFactorySuite" title="com.test.frameworks.POMWithPageFactory.tests.TestAdminLogin" hash-for-method="testAdminLogin(https://talentcentral.cebglobal.com/admin/login, automation.admin@shl.com, Shlonline@123)">testAdminLogin(https://talentcentral.cebglobal.com/admin/login, automation.admin@shl.com, Shlonline@123)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-POMWithPageFactorySuite -->
@@ -120,15 +120,15 @@
           <div class="suite-POMWithPageFactorySuite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.test.frameworks.POMWithPageFactory.tests.TestWeatherApi</span>
+              <span class="class-name">com.test.frameworks.POMWithPageFactory.tests.TestAdminLogin</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testWeatherApi(http://openweathermap.org/current)">
-                  </a> <!-- testWeatherApi(http://openweathermap.org/current) -->
-                  <span class="method-name">testWeatherApi</span>
-                  <span class="parameters">(http://openweathermap.org/current)</span>
+                  <a name="testAdminLogin(https://talentcentral.cebglobal.com/admin/login, automation.admin@shl.com, Shlonline@123)">
+                  </a> <!-- testAdminLogin(https://talentcentral.cebglobal.com/admin/login, automation.admin@shl.com, Shlonline@123) -->
+                  <span class="method-name">testAdminLogin</span>
+                  <span class="parameters">(https://talentcentral.cebglobal.com/admin/login, automation.admin@shl.com, Shlonline@123)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -144,16 +144,17 @@
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite thread-count=&quot;10&quot; guice-stage=&quot;DEVELOPMENT&quot; name=&quot;POMWithPageFactorySuite&quot;&gt;
   &lt;parameter name=&quot;EnvURL&quot; value=&quot;https://talentcentral.cebglobal.com/admin/login&quot;/&gt;
-  &lt;test name=&quot;Test: Weather page API&quot;&gt;
-    &lt;parameter name=&quot;EnvURL&quot; value=&quot;http://openweathermap.org/current&quot;/&gt;
+  &lt;test name=&quot;Test: Simple Login&quot;&gt;
+    &lt;parameter name=&quot;password&quot; value=&quot;Shlonline@123&quot;/&gt;
+    &lt;parameter name=&quot;username&quot; value=&quot;automation.admin@shl.com&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.test.frameworks.POMWithPageFactory.tests.TestWeatherApi&quot;&gt;
+      &lt;class name=&quot;com.test.frameworks.POMWithPageFactory.tests.TestAdminLogin&quot;&gt;
         &lt;methods&gt;
-          &lt;include name=&quot;testWeatherApi&quot;/&gt;
+          &lt;include name=&quot;testAdminLogin&quot;/&gt;
         &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- com.test.frameworks.POMWithPageFactory.tests.TestWeatherApi --&gt;
+      &lt;/class&gt; &lt;!-- com.test.frameworks.POMWithPageFactory.tests.TestAdminLogin --&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Test: Weather page API --&gt;
+  &lt;/test&gt; &lt;!-- Test: Simple Login --&gt;
 &lt;/suite&gt; &lt;!-- POMWithPageFactorySuite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -165,7 +166,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test: Weather page API (1 class)</span>
+                <span class="test-name">Test: Simple Login (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -193,14 +194,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testWeatherApi')
-data.setCell(0, 2, 'com.test.frameworks.POMWithPageFactory.tests.TestWeatherApi')
-data.setCell(0, 3, 72324);
+data.setCell(0, 1, 'testAdminLogin')
+data.setCell(0, 2, 'com.test.frameworks.POMWithPageFactory.tests.TestAdminLogin')
+data.setCell(0, 3, 16431);
 window.suiteTableData['POMWithPageFactorySuite']= { tableData: data, tableDiv: 'times-div-POMWithPageFactorySuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 16 seconds</span>
               <div id="times-div-POMWithPageFactorySuite">
               </div> <!-- times-div-POMWithPageFactorySuite -->
             </div> <!-- times-div -->
@@ -215,9 +216,18 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-POMWithPageFactorySuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">2 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.test.frameworks.POMWithPageFactory.tests.TestAdminLogin</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">testAdminLoginWithConstDataProvider</span>
+                <br/>
+                <span class="ignored-method-name">testAdminLoginWithDataProvider</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-POMWithPageFactorySuite" class="panel">
@@ -226,18 +236,26 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.test.frameworks.POMWithPageFactory.tests.TestWeatherApi</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.test.frameworks.POMWithPageFactory.tests.TestAdminLogin</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
-                <span class="method-name">setup</span>
+                <span class="method-name">setup(https://talentcentral.cebglobal.com/admin/login)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(org.testng.TestRunner@48a12036)</span>
+                <span class="method-start">3163 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">testWeatherApi(http://openweathermap.org/current)</span>
-                <span class="method-start">3210 ms</span>
+                <span class="method-name">testAdminLogin(https://talentcentral.cebglobal.com/admin/login, automation.admin@shl.com, Shlonline@123)</span>
+                <span class="method-start">3165 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=testAdminLogin status=SUCCESS method=TestAdminLogin.testAdminLogin(java.lang.String...)</span>
+                <span class="method-start">19597 ms</span>
+              </div> <!-- configuration-method after -->
               <div class="configuration-test after">
                 <span class="method-name">shutDown</span>
-                <span class="method-start">75544 ms</span>
+                <span class="method-start">19599 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

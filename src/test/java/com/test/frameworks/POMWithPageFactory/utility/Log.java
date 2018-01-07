@@ -2,6 +2,9 @@ package com.test.frameworks.POMWithPageFactory.utility;
 
 import org.apache.log4j.Logger;
 
+import com.aventstack.extentreports.Status;
+import com.test.frameworks.POMWithPageFactory.base.TestBase;
+
 public class Log {
 	
 	public static void startTestCase(String sTestCaseName){
@@ -32,10 +35,11 @@ public class Log {
 		
 		}
 	
-	private static Logger log = Logger.getLogger(Log.class.getName());
+	public static Logger log = Logger.getLogger(Log.class.getName());
 	
 	public static void info(String message) {
 		log.info(message);
+		TestBase.logger.log(Status.INFO, message);
 	}
 	
 	public static void error(String message) {
